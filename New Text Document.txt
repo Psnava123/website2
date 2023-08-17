@@ -1,0 +1,595 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #1A1A1A;
+    padding: 10px 0;
+    border-bottom: 2px solid #00E5FF;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00E5FF;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #00E5FF;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-btn {
+    background-color: #00E5FF;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f2f8f9;
+    padding: 0;
+    background-color: #222222;
+}
+
+.news-section {
+    padding: 0px;
+   text-align: center;
+}
+
+.news-container {
+    display: flex;
+    background-color: #222222;
+    align-items: end;
+    border-radius: 0%;
+    overflow: hidden;
+    position: relative; /* Adding this position for absolute positioning */
+
+}
+
+.section-title h2 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #222222;
+    padding: 0%;
+}
+
+/* Slick Slider Styles */
+.news-slider {
+
+    max-width:100%; /* Adjust as needed */
+    background-color: #222222;
+    /* display: block; */
+}
+
+.news-slide {
+    position: relative;
+    width: 50%; /* Adjust this width as needed */
+    border: 1px solid #f10808;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left; /* Add this line to make slides inline */
+    box-sizing: border-box; /* Include border in width calculation */
+}
+
+.news-slide img {
+    width: 50%; /* Full width of the slide */
+    height: auto;
+    display: block;
+}
+
+/* News Info Styles */
+.news-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust this width as needed */
+    background-color: #222222;
+    color: #222222;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.news-info h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #fa0707;
+}
+
+.news-info p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #f2f8f9;
+}
+
+.news-info a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #fa0707;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-info a:hover {
+    text-decoration: underline;
+}
+
+/* Your existing CSS styles */
+.slick-dots {
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fc0505;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: #f4f8f8;
+}
+
+
+
+/* Car Logo Slider Styles */
+.car-logo-section {
+    margin-top: 3px;
+    position: relative;
+    text-align: center;
+    padding: 5px;
+    background-color:#222222;
+}
+
+.car-logos-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #222222;
+    max-width: 100%;
+}
+
+.car-logo-slide {
+    flex: 0 0 auto;
+    margin: 20 0px;
+}
+
+/* Slider Controls Styles */
+.slider-controls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.slider-arrow {
+    font-size: 24px;
+    background-color: #333;
+    color: white;
+    padding: 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-arrow:hover {
+    background-color: #555;
+}
+
+
+.car-logos img {
+    max-width: 100%;
+    height: 20%;
+    display: block;
+
+}
+
+.next-gen-cars {
+    background-color: #222222;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.next-gen-cars .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.next-gen-cars .section-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.car-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.site-footer {
+    text-align: center;
+    background-color: #1A1A1A;
+    padding: 10px 0;
+    border-top: 2px solid #00E5FF;
+    color: #00E5FF;
+}
+/* ... Your existing styles ... */
+
+.emi-calculator {
+    background-color: #222222;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.calculator-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.calculator-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculator-container label {
+    color: #00E5FF;
+}
+
+.calculator-container input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.calculator-container button {
+    background-color: #00E5FF;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#emi-result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00E5FF;
+}
+/* ... Your existing styles ... */
+
+.about-section {
+    background-color: #222222;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+    color: #ffffff;
+}
+
+.about-content h2 {
+    color: #00E5FF;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/* ... Your existing styles ... */
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 1;
+    text-align: left;
+    color: #ffffff;
+}
+
+.about-content h2 {
+    color: #00E5FF;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-content i {
+    color: #00E5FF;
+    margin-right: 10px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.logo_image img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(135, 2, 2, 0.009);
+}
+.sub-section-title {
+    color: #00E5FF;
+    margin-top: 30px;
+}
+
+.founder-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.founder-list li {
+    margin-bottom: 10px;
+}
+
+.founder-list i {
+    color: #00E5FF;
+    margin-right: 10px;
+}
+/* ... Your existing styles ... */
+
+.sub-section-title {
+    color: #00E5FF;
+    margin-top: 30px;
+}
+
+.founder-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.founder-list li {
+    margin-bottom: 10px;
+}
+
+.founder-list i {
+    color: #00E5FF;
+    margin-right: 10px;
+}
+
+.interesting-features {
+    margin-top: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+}
+
+.feature i {
+    font-size: 24px;
+    color: #00E5FF;
+    margin-right: 10px;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+/* ... Your existing styles ... */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.hero-content {
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #00E5FF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0099cc;
+}
+
+/* Popular Cars Section */
+.popular-cars-section {
+    padding: 80px 0;
+    background-color: #222222
+}
+
+.popular-cars-slider {
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+}
+
+.car {
+    flex: 0 0 300px;
+    text-align: center;
+    border: 1px solid #333;
+    padding : 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background-color: #00E5FF;
+}
+
+/* Features Section */
+.features-section {
+    padding: 80px 0;
+    text-align: center;
+    color: #555;
+    background-color: #1A1A1A;
+}
+
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature i {
+    font-size: 36px;
+    color: #00E5FF;
+    margin-bottom: 10px;
+}
+
+/* ... Other styles ... */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
